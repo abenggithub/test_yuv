@@ -1,18 +1,3 @@
-/* test_yuvcap.c
- *
- * History:
- *	2012/02/09 - [Jian Tang] created file
- *	2013/11/27 - [Zhaoyang Chen] modified file
- *
- * Copyright (C) 2007-2012, Ambarella, Inc.
- *
- * All rights reserved. No Part of this file may be reproduced, stored
- * in a retrieval system, or transmitted, in any form, or by any means,
- * electronic, mechanical, photocopying, recording, or otherwise,
- * without the prior consent of Ambarella, Inc.
- *
- */
-
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdio.h>
@@ -2061,7 +2046,7 @@ static int init_x264_encoder()
     codec_context->time_base = (AVRational) {1, 30};
     codec_context->gop_size = 30; /* emit one intra frame every ten frames */
     codec_context->max_b_frames = 1; //1
-    //codec_context->pix_fmt = AV_PIX_FMT_YUV422P; //v4l2是这个格式  AV_PIX_FMT_YUV420P;
+    //codec_context->pix_fmt = AV_PIX_FMT_YUV422P; //v4l2脢脟脮芒赂枚赂帽脢陆  AV_PIX_FMT_YUV420P;
     //codec_context->pix_fmt = YUV420_IYUV;
     codec_context->pix_fmt = AV_PIX_FMT_YUV420P;
  #if 0   
